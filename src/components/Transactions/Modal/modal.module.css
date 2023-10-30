@@ -1,0 +1,27 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.151);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 25;
+height: 100vh;
+
+}
+
+.calenderparent {
+    display: flex;
+    position:relative
+}
+
+.calender {
+    position: absolute;
+    top: 10px;
+    left:0px;
+    right:0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+justify-content: center;
+    z-index: 1;
+}
