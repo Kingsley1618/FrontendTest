@@ -5,11 +5,8 @@ import 'react-calendar/dist/Calendar.css';
 import { IoIosArrowDown } from 'react-icons/io';
 import styles from './modal.module.css';
 
-interface DateInputProps {
-  id: string;
-}
 
-function DateInput({ id }: DateInputProps) {
+function DateInput() {
   const initialDate = new Date(); 
 
   const [input1Date, setInput1Date] = useState<Date>(initialDate);
