@@ -31,7 +31,7 @@ export default async function TransactionList() {
 <h1 className={styles.transaction_type}>Cash {transactions.type} </h1> : 
 <h1 className={styles.transaction_type}>{transactions?.metadata?.product_name} </h1> }
 {!transactions?.metadata?.name ? 
-<p className={transactions?.status === "successful" ? styles.success : transactions?.status === "pending" ? "text-[#A77A07]" : null}>{transactions?.status}</p> : 
+<p className={transactions?.status === "successful" ? styles.success : transactions?.status === "pending" ? "text-[#A77A07]" : ""}>{transactions?.status}</p> : 
 <p className={styles.person}>{transactions?.metadata?.name}</p>}
 </div>
 </div>
